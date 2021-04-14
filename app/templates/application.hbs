@@ -1,5 +1,23 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="header-container">
+  <div class="header-instructions">
+    <h1>Invoices Guess - Who</h1>
+    <h2>Goal: Guess the other player's Invoices team member before they guess yours!</h2>
+    <ol>
+      <li>This is a 2 player game, have someone else poll up a board!</li>
+      <li>Take turns asking yes or no questions to try and guess the other players card by process of elimination.
+        <ul>
+          <li>Ex. Is your team member from Canada?</li>
+          <li>Ex. Is your team a mobile developer?</li>
+        </ul>
+      </li>
+      <li>Use your board and flip over the cards of team members that you can eliminate</li>
+    </ol>
+  </div>
+  <div>
+    <p class="guessing-card__text">Your team member is...</p>
+    <GuessingCard />
+  </div>
+</div>
 
-{{outlet}}
+
+<PersonGrid />

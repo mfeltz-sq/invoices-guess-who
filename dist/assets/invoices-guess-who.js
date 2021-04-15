@@ -222,7 +222,7 @@
 
   /*
     This code initializes EmberData in an Ember application.
-
+  
     It ensures that the `store` service is automatically injected
     as the `store` property on all routes and controllers.
   */
@@ -577,5 +577,5 @@ catch(err) {
           if (!runningTests) {
             require("invoices-guess-who/app")["default"].create({"name":"invoices-guess-who","version":"0.0.0+bed6feed"});
           }
-
+        
 //# sourceMappingURL=invoices-guess-who.map

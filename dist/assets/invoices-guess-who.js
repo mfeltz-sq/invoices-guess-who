@@ -436,79 +436,79 @@
   _exports.default = void 0;
   var _default = [{
     name: 'aaron',
-    img: '/invoices-guess-who/assets/images/aaron.jpg'
+    img: '/assets/images/aaron.jpg'
   }, {
     name: 'austin',
-    img: '/invoices-guess-who/assets/images/austin.png'
+    img: '/assets/images/austin.png'
   }, {
     name: 'ben',
-    img: '/invoices-guess-who/assets/images/ben.jpg'
+    img: '/assets/images/ben.jpg'
   }, {
     name: 'brad',
-    img: '/invoices-guess-who/assets/images/brad.jpg'
+    img: '/assets/images/brad.jpg'
   }, {
     name: 'carrie',
-    img: '/invoices-guess-who/assets/images/carrie.jpg'
+    img: '/assets/images/carrie.jpg'
   }, {
     name: 'efe',
-    img: '/invoices-guess-who/assets/images/efe.jpg'
+    img: '/assets/images/efe.jpg'
   }, {
     name: 'hung',
-    img: '/invoices-guess-who/assets/images/hung.jpg'
+    img: '/assets/images/hung.jpg'
   }, {
     name: 'ini',
-    img: '/invoices-guess-who/assets/images/ini.jpg'
+    img: '/assets/images/ini.jpg'
   }, {
     name: 'jen',
-    img: '/invoices-guess-who/assets/images/jen.png'
+    img: '/assets/images/jen.png'
   }, {
     name: 'jess',
-    img: '/invoices-guess-who/assets/images/jess.png'
+    img: '/assets/images/jess.png'
   }, {
     name: 'jesse',
-    img: '/invoices-guess-who/assets/images/jesse.png'
+    img: '/assets/images/jesse.png'
   }, {
     name: 'kaitlyn',
-    img: '/invoices-guess-who/assets/images/kaitlyn.jpg'
+    img: '/assets/images/kaitlyn.jpg'
   }, {
     name: 'margaret',
-    img: '/invoices-guess-who/assets/images/margaret.jpg'
+    img: '/assets/images/margaret.jpg'
   }, {
     name: 'matt',
-    img: '/invoices-guess-who/assets/images/matt.jpg'
+    img: '/assets/images/matt.jpg'
   }, {
     name: 'maya',
-    img: '/invoices-guess-who/assets/images/maya.jpg'
+    img: '/assets/images/maya.jpg'
   }, {
     name: 'michael',
-    img: '/invoices-guess-who/assets/images/michael.jpg'
+    img: '/assets/images/michael.jpg'
   }, {
     name: 'monica',
-    img: '/invoices-guess-who/assets/images/monica.png'
+    img: '/assets/images/monica.png'
   }, {
     name: 'nik',
-    img: '/invoices-guess-who/assets/images/nik.png'
+    img: '/assets/images/nik.png'
   }, {
     name: 'paul',
-    img: '/invoices-guess-who/assets/images/paul.png'
+    img: '/assets/images/paul.png'
   }, {
     name: 'ramin',
-    img: '/invoices-guess-who/assets/images/ramin.png'
+    img: '/assets/images/ramin.png'
   }, {
     name: 'ryan',
-    img: '/invoices-guess-who/assets/images/ryan.jpg'
+    img: '/assets/images/ryan.jpg'
   }, {
     name: 'sam',
-    img: '/invoices-guess-who/assets/images/sam.png'
+    img: '/assets/images/sam.png'
   }, {
     name: 'sudheer',
-    img: '/invoices-guess-who/assets/images/sudheer.jpg'
+    img: '/assets/images/sudheer.jpg'
   }, {
     name: 'sukwon',
-    img: '/invoices-guess-who/assets/images/sukwon.jpg'
+    img: '/assets/images/sukwon.jpg'
   }, {
     name: 'wardell',
-    img: '/invoices-guess-who/assets/images/wardell.png'
+    img: '/assets/images/wardell.png'
   }];
   _exports.default = _default;
 });

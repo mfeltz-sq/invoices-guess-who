@@ -1,102 +1,102 @@
 export default [
   {
     name: 'aaron',
-    img: '/assets/images/aaron.jpg'
+    img: '/invoices-guess-who/assets/images/aaron.jpg'
   },
   {
     name: 'austin',
-    img: '/assets/images/austin.png'
+    img: '/invoices-guess-who/assets/images/austin.png'
   },
   {
     name: 'ben',
-    img: '/assets/images/ben.jpg'
+    img: '/invoices-guess-who/assets/images/ben.jpg'
   },
   {
     name: 'brad',
-    img: '/assets/images/brad.jpg'
+    img: '/invoices-guess-who/assets/images/brad.jpg'
   },
   {
     name: 'carrie',
-    img: '/assets/images/carrie.jpg'
+    img: '/invoices-guess-who/assets/images/carrie.jpg'
   },
   {
     name: 'efe',
-    img: '/assets/images/efe.jpg'
+    img: '/invoices-guess-who/assets/images/efe.jpg'
   },
   {
     name: 'hung',
-    img: '/assets/images/hung.jpg'
+    img: '/invoices-guess-who/assets/images/hung.jpg'
   },
   {
     name: 'ini',
-    img: '/assets/images/ini.jpg'
+    img: '/invoices-guess-who/assets/images/ini.jpg'
   },
   {
     name: 'jen',
-    img: '/assets/images/jen.png'
+    img: '/invoices-guess-who/assets/images/jen.png'
   },
   {
     name: 'jess',
-    img: '/assets/images/jess.png'
+    img: '/invoices-guess-who/assets/images/jess.png'
   },
   {
     name: 'jesse',
-    img: '/assets/images/jesse.png'
+    img: '/invoices-guess-who/assets/images/jesse.png'
   },
   {
     name: 'kaitlyn',
-    img: '/assets/images/kaitlyn.jpg'
+    img: '/invoices-guess-who/assets/images/kaitlyn.jpg'
   },
   {
     name: 'margaret',
-    img: '/assets/images/margaret.jpg'
+    img: '/invoices-guess-who/assets/images/margaret.jpg'
   },
   {
     name: 'matt',
-    img: '/assets/images/matt.jpg'
+    img: '/invoices-guess-who/assets/images/matt.jpg'
   },
   {
     name: 'maya',
-    img: '/assets/images/maya.jpg'
+    img: '/invoices-guess-who/assets/images/maya.jpg'
   },
   {
     name: 'michael',
-    img: '/assets/images/michael.jpg'
+    img: '/invoices-guess-who/assets/images/michael.jpg'
   },
   {
     name: 'monica',
-    img: '/assets/images/monica.png'
+    img: '/invoices-guess-who/assets/images/monica.png'
   },
   {
     name: 'nik',
-    img: '/assets/images/nik.png'
+    img: '/invoices-guess-who/assets/images/nik.png'
   },
   {
     name: 'paul',
-    img: '/assets/images/paul.png'
+    img: '/invoices-guess-who/assets/images/paul.png'
   },
   {
     name: 'ramin',
-    img: '/assets/images/ramin.png'
+    img: '/invoices-guess-who/assets/images/ramin.png'
   },
   {
     name: 'ryan',
-    img: '/assets/images/ryan.jpg'
+    img: '/invoices-guess-who/assets/images/ryan.jpg'
   },
   {
     name: 'sam',
-    img: '/assets/images/sam.png'
+    img: '/invoices-guess-who/assets/images/sam.png'
   },
   {
     name: 'sudheer',
-    img: '/assets/images/sudheer.jpg'
+    img: '/invoices-guess-who/assets/images/sudheer.jpg'
   },
   {
     name: 'sukwon',
-    img: '/assets/images/sukwon.jpg'
+    img: '/invoices-guess-who/assets/images/sukwon.jpg'
   },
   {
     name: 'wardell',
-    img: '/assets/images/wardell.png'
+    img: '/invoices-guess-who/assets/images/wardell.png'
   },
 ];

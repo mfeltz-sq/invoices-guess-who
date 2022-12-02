@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('gameboard', { path: '/'});
+  this.route('your-card');
 });
 
 export default Router;

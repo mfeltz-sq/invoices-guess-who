@@ -1,22 +1,25 @@
 import config from 'invoices-guess-who/config/environment';
 
+/** [TEMPLATE]
+  {
+    name: 'person',
+    img: `${config.rootURL}assets/images/person.png`
+  },
+*/
+
 export default [
   {
-    name: 'aaron',
-    img: `${config.rootURL}assets/images/aaron.jpg`
+    name: 'alyssa',
+    img: `${config.rootURL}assets/images/alyssa.png`
+  },
+  {
+    name: 'amay',
+    img: `${config.rootURL}assets/images/amay.png`
   },
   {
     name: 'anthony',
-    img: `${config.rootURL}assets/images/anthony.png`
+    img: `${config.rootURL}assets/images/anthony.jpeg`
   },
-  {
-    name: 'austin',
-    img: `${config.rootURL}assets/images/austin.png`
-  },
-  // {
-  //   name: 'ben',
-  //   img: `${config.rootURL}assets/images/ben.jpg`
-  // },
   {
     name: 'brad',
     img: `${config.rootURL}assets/images/brad.jpg`
@@ -26,28 +29,36 @@ export default [
     img: `${config.rootURL}assets/images/carrie.jpg`
   },
   {
-    name: 'craig',
-    img: `${config.rootURL}assets/images/craig.png`
+    name: 'claire',
+    img: `${config.rootURL}assets/images/claire.jpeg`
+  },
+  {
+    name: 'david',
+    img: `${config.rootURL}assets/images/david.jpeg`
+  },
+  {
+    name: 'devany',
+    img: `${config.rootURL}assets/images/devany.jpeg`
   },
   {
     name: 'efe',
     img: `${config.rootURL}assets/images/efe.jpg`
   },
   {
-    name: 'elan',
-    img: `${config.rootURL}assets/images/elan.png`
+    name: 'emma',
+    img: `${config.rootURL}assets/images/emma.jpeg`
   },
   {
     name: 'hung',
     img: `${config.rootURL}assets/images/hung.jpg`
   },
-  // {
-  //   name: 'ini',
-  //   img: `${config.rootURL}assets/images/ini.jpg`
-  // },
   {
     name: 'jae',
     img: `${config.rootURL}assets/images/jae.png`
+  },
+  {
+    name: 'jason',
+    img: `${config.rootURL}assets/images/jason.jpeg`
   },
   {
     name: 'jen',
@@ -58,8 +69,20 @@ export default [
     img: `${config.rootURL}assets/images/jess.png`
   },
   {
-    name: 'jesse',
-    img: `${config.rootURL}assets/images/jesse.png`
+    name: 'jiaqi',
+    img: `${config.rootURL}assets/images/jiaqi.jpeg`
+  },
+  {
+    name: 'joanne',
+    img: `${config.rootURL}assets/images/joanne.jpeg`
+  },
+  {
+    name: 'jonathan',
+    img: `${config.rootURL}assets/images/jonathan.jpeg`
+  },
+  {
+    name: 'jordan',
+    img: `${config.rootURL}assets/images/jordan.png`
   },
   {
     name: 'judy',
@@ -70,28 +93,20 @@ export default [
     img: `${config.rootURL}assets/images/kaitlyn.jpg`
   },
   {
-    name: 'kushan',
-    img: `${config.rootURL}assets/images/kushan.png`
+    name: 'kalil',
+    img: `${config.rootURL}assets/images/kalil.png`
   },
   {
-    name: 'kyle',
-    img: `${config.rootURL}assets/images/kyle.png`
-  },
-  {
-    name: 'lesley',
-    img: `${config.rootURL}assets/images/lesley.png`
+    name: 'karl',
+    img: `${config.rootURL}assets/images/karl.jpeg`
   },
   {
     name: 'margaret',
     img: `${config.rootURL}assets/images/margaret.jpg`
   },
   {
-    name: 'matt b',
+    name: 'matt',
     img: `${config.rootURL}assets/images/mattb.jpg`
-  },
-  {
-    name: 'matt d',
-    img: `${config.rootURL}assets/images/mattd.png`
   },
   {
     name: 'maya',
@@ -106,13 +121,17 @@ export default [
     img: `${config.rootURL}assets/images/michael.jpg`
   },
   {
+    name: 'michelle',
+    img: `${config.rootURL}assets/images/michelle.jpeg`
+  },
+  {
     name: 'monica',
     img: `${config.rootURL}assets/images/monica.png`
   },
-  // {
-  //   name: 'nik',
-  //   img: `${config.rootURL}assets/images/nik.png`
-  // },
+  {
+    name: 'nestor',
+    img: `${config.rootURL}assets/images/nestor.jpeg`
+  },
   {
     name: 'olivia',
     img: `${config.rootURL}assets/images/olivia.png`
@@ -126,6 +145,10 @@ export default [
     img: `${config.rootURL}assets/images/ramin.png`
   },
   {
+    name: 'rose',
+    img: `${config.rootURL}assets/images/rose.png`
+  },
+  {
     name: 'ryan l',
     img: `${config.rootURL}assets/images/ryanl.jpg`
   },
@@ -133,10 +156,10 @@ export default [
     name: 'ryan s',
     img: `${config.rootURL}assets/images/ryans.png`
   },
-  // {
-  //   name: 'sam',
-  //   img: `${config.rootURL}assets/images/sam.png`
-  // },
+  {
+    name: 'sarang',
+    img: `${config.rootURL}assets/images/sarang.jpeg`
+  },
   {
     name: 'sudheer',
     img: `${config.rootURL}assets/images/sudheer.jpg`
@@ -150,3 +173,58 @@ export default [
     img: `${config.rootURL}assets/images/wardell.png`
   },
 ];
+
+// Archive
+
+  // {
+  //   name: 'aaron',
+  //   img: `${config.rootURL}assets/images/aaron.jpg`
+  // },
+  // {
+  //   name: 'austin',
+  //   img: `${config.rootURL}assets/images/austin.png`
+  // },
+  // {
+  //   name: 'ben',
+  //   img: `${config.rootURL}assets/images/ben.jpg`
+  // },
+  // {
+  //   name: 'craig',
+  //   img: `${config.rootURL}assets/images/craig.png`
+  // },
+  // {
+  //   name: 'elan',
+  //   img: `${config.rootURL}assets/images/elan.png`
+  // },
+  // {
+  //   name: 'ini',
+  //   img: `${config.rootURL}assets/images/ini.jpg`
+  // },
+  // {
+  //   name: 'jesse',
+  //   img: `${config.rootURL}assets/images/jesse.png`
+  // },
+  // {
+  //   name: 'kushan',
+  //   img: `${config.rootURL}assets/images/kushan.png`
+  // },
+  // {
+  //   name: 'kyle',
+  //   img: `${config.rootURL}assets/images/kyle.png`
+  // },
+  // {
+  //   name: 'lesley',
+  //   img: `${config.rootURL}assets/images/lesley.png`
+  // },
+  // {
+  //   name: 'matt d',
+  //   img: `${config.rootURL}assets/images/mattd.png`
+  // },
+  // {
+  //   name: 'nik',
+  //   img: `${config.rootURL}assets/images/nik.png`
+  // },
+  // {
+  //   name: 'sam',
+  //   img: `${config.rootURL}assets/images/sam.png`
+  // },

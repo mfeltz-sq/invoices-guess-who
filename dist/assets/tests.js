@@ -8,13 +8,15 @@ define("invoices-guess-who/tests/integration/components/guessing-card-test", ["q
     (0, _qunit.test)('it renders', async function (assert) {
       // Set any properties with this.set('myProperty', 'value');
       // Handle any actions with this.set('myAction', function(val) { ... });
+
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "xTYcYE0W",
         "block": "{\"symbols\":[],\"statements\":[[5,\"guessing-card\",[],[[],[]]]],\"hasEval\":false}",
         "meta": {}
       }));
-      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+      assert.equal(this.element.textContent.trim(), '');
 
+      // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "WyLvaxkd",
         "block": "{\"symbols\":[],\"statements\":[[0,\"\\n      \"],[5,\"guessing-card\",[],[[],[]],{\"statements\":[[0,\"\\n        template block text\\n      \"]],\"parameters\":[]}],[0,\"\\n    \"]],\"hasEval\":false}",
@@ -32,13 +34,15 @@ define("invoices-guess-who/tests/integration/components/person-card-test", ["qun
     (0, _qunit.test)('it renders', async function (assert) {
       // Set any properties with this.set('myProperty', 'value');
       // Handle any actions with this.set('myAction', function(val) { ... });
+
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "UV2y3GXG",
         "block": "{\"symbols\":[],\"statements\":[[5,\"person-card\",[],[[],[]]]],\"hasEval\":false}",
         "meta": {}
       }));
-      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+      assert.equal(this.element.textContent.trim(), '');
 
+      // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "U2T7dFz9",
         "block": "{\"symbols\":[],\"statements\":[[0,\"\\n      \"],[5,\"person-card\",[],[[],[]],{\"statements\":[[0,\"\\n        template block text\\n      \"]],\"parameters\":[]}],[0,\"\\n    \"]],\"hasEval\":false}",
@@ -56,13 +60,15 @@ define("invoices-guess-who/tests/integration/components/person-grid-test", ["qun
     (0, _qunit.test)('it renders', async function (assert) {
       // Set any properties with this.set('myProperty', 'value');
       // Handle any actions with this.set('myAction', function(val) { ... });
+
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "Kc3JOcqe",
         "block": "{\"symbols\":[],\"statements\":[[5,\"person-grid\",[],[[],[]]]],\"hasEval\":false}",
         "meta": {}
       }));
-      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+      assert.equal(this.element.textContent.trim(), '');
 
+      // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "bXml4XDJ",
         "block": "{\"symbols\":[],\"statements\":[[0,\"\\n      \"],[5,\"person-grid\",[],[[],[]],{\"statements\":[[0,\"\\n        template block text\\n      \"]],\"parameters\":[]}],[0,\"\\n    \"]],\"hasEval\":false}",
@@ -80,13 +86,15 @@ define("invoices-guess-who/tests/integration/components/playing-card-test", ["qu
     (0, _qunit.test)('it renders', async function (assert) {
       // Set any properties with this.set('myProperty', 'value');
       // Handle any actions with this.set('myAction', function(val) { ... });
+
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "E0KHZ0lc",
         "block": "{\"symbols\":[],\"statements\":[[5,\"playing-card\",[],[[],[]]]],\"hasEval\":false}",
         "meta": {}
       }));
-      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+      assert.equal(this.element.textContent.trim(), '');
 
+      // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
         "id": "0MUY3hgp",
         "block": "{\"symbols\":[],\"statements\":[[0,\"\\n      \"],[5,\"playing-card\",[],[[],[]],{\"statements\":[[0,\"\\n        template block text\\n      \"]],\"parameters\":[]}],[0,\"\\n    \"]],\"hasEval\":false}",
@@ -120,6 +128,10 @@ define("invoices-guess-who/tests/lint/app.lint-test", [], function () {
     assert.expect(1);
     assert.ok(true, 'components/playing-card.js should pass ESLint\n\n');
   });
+  QUnit.test('controllers/gameboard.js', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'controllers/gameboard.js should pass ESLint\n\n6:3 - Parsing error: Unexpected character \'@\' (null)');
+  });
   QUnit.test('resolver.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'resolver.js should pass ESLint\n\n');
@@ -127,6 +139,14 @@ define("invoices-guess-who/tests/lint/app.lint-test", [], function () {
   QUnit.test('router.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'router.js should pass ESLint\n\n');
+  });
+  QUnit.test('routes/gameboard.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/gameboard.js should pass ESLint\n\n');
+  });
+  QUnit.test('routes/your-card.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/your-card.js should pass ESLint\n\n');
   });
   QUnit.test('utils/person-data.js', function (assert) {
     assert.expect(1);
@@ -139,7 +159,7 @@ define("invoices-guess-who/tests/lint/templates.template.lint-test", [], functio
   QUnit.module('TemplateLint');
   QUnit.test('invoices-guess-who/templates/application.hbs', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'invoices-guess-who/templates/application.hbs should pass TemplateLint.\n\ninvoices-guess-who/templates/application.hbs\n  7:10  error  Incorrect indentation for `Take turns asking yes or no questions to try and guess the other players card by process of elimination.\n        ` beginning at L7:C10. Expected `Take turns asking yes or no questions to try and guess the other players card by process of elimination.\n        ` to be at an indentation of 8 but was found at 10.  block-indentation\n');
+    assert.ok(true, 'invoices-guess-who/templates/application.hbs should pass TemplateLint.\n\n');
   });
   QUnit.test('invoices-guess-who/templates/components/guessing-card.hbs', function (assert) {
     assert.expect(1);
@@ -156,6 +176,14 @@ define("invoices-guess-who/tests/lint/templates.template.lint-test", [], functio
   QUnit.test('invoices-guess-who/templates/components/playing-card.hbs', function (assert) {
     assert.expect(1);
     assert.ok(false, 'invoices-guess-who/templates/components/playing-card.hbs should pass TemplateLint.\n\ninvoices-guess-who/templates/components/playing-card.hbs\n  3:6  error  Incorrect indentation for `<PersonCard>` beginning at L3:C6. Expected `<PersonCard>` to be at an indentation of 4 but was found at 6.  block-indentation\n  4:2  error  Using an {{else}} block with {{unless}} should be avoided.  simple-unless\n');
+  });
+  QUnit.test('invoices-guess-who/templates/gameboard.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'invoices-guess-who/templates/gameboard.hbs should pass TemplateLint.\n\ninvoices-guess-who/templates/gameboard.hbs\n  7:10  error  Incorrect indentation for `Take turns asking yes or no questions to try and guess the other players card by process of elimination.\n        ` beginning at L7:C10. Expected `Take turns asking yes or no questions to try and guess the other players card by process of elimination.\n        ` to be at an indentation of 8 but was found at 10.  block-indentation\n');
+  });
+  QUnit.test('invoices-guess-who/templates/your-card.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'invoices-guess-who/templates/your-card.hbs should pass TemplateLint.\n\n');
   });
 });
 define("invoices-guess-who/tests/lint/tests.lint-test", [], function () {
@@ -182,6 +210,14 @@ define("invoices-guess-who/tests/lint/tests.lint-test", [], function () {
     assert.expect(1);
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
+  QUnit.test('unit/routes/gameboard-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/gameboard-test.js should pass ESLint\n\n');
+  });
+  QUnit.test('unit/routes/your-card-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/your-card-test.js should pass ESLint\n\n');
+  });
   QUnit.test('unit/utils/person-data-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/utils/person-data-test.js should pass ESLint\n\n');
@@ -192,6 +228,28 @@ define("invoices-guess-who/tests/test-helper", ["invoices-guess-who/app", "invoi
 
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
   (0, _emberQunit.start)();
+});
+define("invoices-guess-who/tests/unit/routes/gameboard-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
+  "use strict";
+
+  (0, _qunit.module)('Unit | Route | gameboard', function (hooks) {
+    (0, _emberQunit.setupTest)(hooks);
+    (0, _qunit.test)('it exists', function (assert) {
+      let route = this.owner.lookup('route:gameboard');
+      assert.ok(route);
+    });
+  });
+});
+define("invoices-guess-who/tests/unit/routes/your-card-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
+  "use strict";
+
+  (0, _qunit.module)('Unit | Route | your-card', function (hooks) {
+    (0, _emberQunit.setupTest)(hooks);
+    (0, _qunit.test)('it exists', function (assert) {
+      let route = this.owner.lookup('route:your-card');
+      assert.ok(route);
+    });
+  });
 });
 define("invoices-guess-who/tests/unit/utils/person-data-test", ["invoices-guess-who/utils/person-data", "qunit"], function (_personData, _qunit) {
   "use strict";

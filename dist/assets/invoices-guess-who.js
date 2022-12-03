@@ -674,7 +674,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("invoices-guess-who/app")["default"].create({"name":"invoices-guess-who","version":"0.0.0+cae69861"});
+            require("invoices-guess-who/app")["default"].create({"name":"invoices-guess-who","version":"0.0.0+eef2b42e"});
           }
 
 //# sourceMappingURL=invoices-guess-who.map

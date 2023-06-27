@@ -56,11 +56,13 @@ body {
   flex-direction: column;
   margin: 10px;
   padding: 10px;
-  width: 124px;
+  width: 150px;
+  height: 200px
 }
 
 .guessing-card {
   margin: 0 auto;
+  height: 240px;
 }
 
 .guessing-card__button {
@@ -79,10 +81,6 @@ body {
   flex-direction: column;
 }
 
-.playing-card {
-  height: 150px;
-}
-
 .playing-card--is-flipped {
   background-color: gray;
   justify-content: center;
@@ -90,9 +88,15 @@ body {
 
 .person-card__img {
   border-radius: 10px;
-  width: 120px;
+  width: 146px;
+  height: 140px;
+  object-fit: cover;
 }
 
 .person-card__name {
   margin: 8px;
+}
+
+.flex-spacer {
+  flex-grow: 1;
 }

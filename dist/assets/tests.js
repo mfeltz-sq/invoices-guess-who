@@ -122,7 +122,7 @@ define("invoices-guess-who/tests/lint/app.lint-test", [], function () {
   });
   QUnit.test('components/person-grid.js', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/person-grid.js should pass ESLint\n\n');
+    assert.ok(false, 'components/person-grid.js should pass ESLint\n\n14:3 - Only string, number, symbol, boolean, null, undefined, and function are allowed as default properties (ember/avoid-leaking-state-in-ember-objects)');
   });
   QUnit.test('components/playing-card.js', function (assert) {
     assert.expect(1);

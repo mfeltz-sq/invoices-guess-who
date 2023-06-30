@@ -25,20 +25,23 @@
     value: true
   });
   _exports.default = void 0;
-  function getRandomPerson() {
-    const randomIndex = Math.floor(Math.random() * _personData.default.length);
-    return _personData.default[randomIndex];
+  function getRandomPerson(people) {
+    const randomIndex = Math.floor(Math.random() * people.length);
+    return people[randomIndex];
   }
   var _default = Ember.Component.extend({
     classNames: ['guessing-card'],
     init() {
       this._super(...arguments);
-      this.set('selectedPerson', getRandomPerson());
+      (0, _personData.default)().then(result => {
+        this.set('people', result);
+        this.set('selectedPerson', getRandomPerson(result));
+      });
     },
     selectedPerson: null,
     actions: {
       randomizePerson() {
-        this.set('selectedPerson', getRandomPerson());
+        this.set('selectedPerson', getRandomPerson(this.get('people')));
       }
     }
   });
@@ -64,8 +67,14 @@
   });
   _exports.default = void 0;
   var _default = Ember.Component.extend({
+    init() {
+      this._super(...arguments);
+      (0, _personData.default)().then(result => {
+        this.set('people', result);
+      });
+    },
     classNames: ['person-grid'],
-    people: _personData.default
+    people: []
   });
   _exports.default = _default;
 });
@@ -372,8 +381,8 @@
   });
   _exports.default = void 0;
   var _default = Ember.HTMLBars.template({
-    "id": "DjK1qe8o",
-    "block": "{\"symbols\":[],\"statements\":[[5,\"person-card\",[],[[\"@person\"],[[23,0,[\"selectedPerson\"]]]]],[0,\"\\n\\n\"],[7,\"button\",false],[12,\"class\",\"guessing-card__button\"],[3,\"action\",[[23,0,[]],\"randomizePerson\"]],[8],[0,\"Shuffle\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "18yNXMnH",
+    "block": "{\"symbols\":[],\"statements\":[[5,\"person-card\",[],[[\"@person\"],[[23,0,[\"selectedPerson\"]]]]],[0,\"\\n\"],[7,\"div\",true],[10,\"class\",\"flex-spacer\"],[8],[9],[0,\"\\n\"],[7,\"button\",false],[12,\"class\",\"guessing-card__button\"],[3,\"action\",[[23,0,[]],\"randomizePerson\"]],[8],[0,\"Shuffle\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "invoices-guess-who/templates/components/guessing-card.hbs"
     }
@@ -388,8 +397,8 @@
   });
   _exports.default = void 0;
   var _default = Ember.HTMLBars.template({
-    "id": "dzIJd4lG",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"img\",true],[10,\"class\",\"person-card__img\"],[11,\"src\",[24,[\"person\",\"img\"]]],[8],[9],[0,\"\\n\"],[7,\"p\",true],[10,\"class\",\"person-card__name\"],[8],[1,[24,[\"person\",\"name\"]],false],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "UjdbWNMT",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"img\",true],[10,\"class\",\"person-card__img\"],[11,\"src\",[24,[\"person\",\"img\"]]],[8],[9],[0,\"\\n\"],[7,\"p\",true],[10,\"class\",\"person-card__name\"],[8],[1,[24,[\"person\",\"firstName\"]],false],[0,\" \"],[1,[24,[\"person\",\"lastName\"]],false],[9],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "invoices-guess-who/templates/components/person-card.hbs"
     }
@@ -467,188 +476,29 @@
     value: true
   });
   _exports.default = void 0;
-  /** [TEMPLATE]
-    {
-      name: 'person',
-      img: `${config.rootURL}assets/images/person.png`
-    },
-  */
-  var _default = [{
-    name: 'alyssa',
-    img: `${_environment.default.rootURL}assets/images/alyssa.png`
-  }, {
-    name: 'amay',
-    img: `${_environment.default.rootURL}assets/images/amay.png`
-  }, {
-    name: 'anthony',
-    img: `${_environment.default.rootURL}assets/images/anthony.jpeg`
-  }, {
-    name: 'brad',
-    img: `${_environment.default.rootURL}assets/images/brad.jpg`
-  }, {
-    name: 'carrie',
-    img: `${_environment.default.rootURL}assets/images/carrie.jpg`
-  }, {
-    name: 'claire',
-    img: `${_environment.default.rootURL}assets/images/claire.jpeg`
-  }, {
-    name: 'david',
-    img: `${_environment.default.rootURL}assets/images/david.jpeg`
-  }, {
-    name: 'devany',
-    img: `${_environment.default.rootURL}assets/images/devany.jpeg`
-  }, {
-    name: 'efe',
-    img: `${_environment.default.rootURL}assets/images/efe.jpg`
-  }, {
-    name: 'emma',
-    img: `${_environment.default.rootURL}assets/images/emma.jpeg`
-  }, {
-    name: 'hung',
-    img: `${_environment.default.rootURL}assets/images/hung.jpg`
-  }, {
-    name: 'jae',
-    img: `${_environment.default.rootURL}assets/images/jae.png`
-  }, {
-    name: 'jason',
-    img: `${_environment.default.rootURL}assets/images/jason.jpeg`
-  }, {
-    name: 'jen',
-    img: `${_environment.default.rootURL}assets/images/jen.png`
-  }, {
-    name: 'jess',
-    img: `${_environment.default.rootURL}assets/images/jess.png`
-  }, {
-    name: 'jiaqi',
-    img: `${_environment.default.rootURL}assets/images/jiaqi.jpeg`
-  }, {
-    name: 'joanne',
-    img: `${_environment.default.rootURL}assets/images/joanne.jpeg`
-  }, {
-    name: 'jonathan',
-    img: `${_environment.default.rootURL}assets/images/jonathan.jpeg`
-  }, {
-    name: 'jordan',
-    img: `${_environment.default.rootURL}assets/images/jordan.png`
-  }, {
-    name: 'judy',
-    img: `${_environment.default.rootURL}assets/images/judy.png`
-  }, {
-    name: 'kaitlyn',
-    img: `${_environment.default.rootURL}assets/images/kaitlyn.jpg`
-  }, {
-    name: 'kalil',
-    img: `${_environment.default.rootURL}assets/images/kalil.png`
-  }, {
-    name: 'karl',
-    img: `${_environment.default.rootURL}assets/images/karl.jpeg`
-  }, {
-    name: 'margaret',
-    img: `${_environment.default.rootURL}assets/images/margaret.jpg`
-  }, {
-    name: 'matt',
-    img: `${_environment.default.rootURL}assets/images/mattb.jpg`
-  }, {
-    name: 'maya',
-    img: `${_environment.default.rootURL}assets/images/maya.jpg`
-  }, {
-    name: 'mengqi',
-    img: `${_environment.default.rootURL}assets/images/mengqi.png`
-  }, {
-    name: 'michael',
-    img: `${_environment.default.rootURL}assets/images/michael.jpg`
-  }, {
-    name: 'michelle',
-    img: `${_environment.default.rootURL}assets/images/michelle.jpeg`
-  }, {
-    name: 'monica',
-    img: `${_environment.default.rootURL}assets/images/monica.png`
-  }, {
-    name: 'nestor',
-    img: `${_environment.default.rootURL}assets/images/nestor.jpeg`
-  }, {
-    name: 'olivia',
-    img: `${_environment.default.rootURL}assets/images/olivia.png`
-  }, {
-    name: 'paul',
-    img: `${_environment.default.rootURL}assets/images/paul.png`
-  }, {
-    name: 'ramin',
-    img: `${_environment.default.rootURL}assets/images/ramin.png`
-  }, {
-    name: 'rose',
-    img: `${_environment.default.rootURL}assets/images/rose.png`
-  }, {
-    name: 'ryan l',
-    img: `${_environment.default.rootURL}assets/images/ryanl.jpg`
-  }, {
-    name: 'ryan s',
-    img: `${_environment.default.rootURL}assets/images/ryans.png`
-  }, {
-    name: 'sarang',
-    img: `${_environment.default.rootURL}assets/images/sarang.jpeg`
-  }, {
-    name: 'sudheer',
-    img: `${_environment.default.rootURL}assets/images/sudheer.jpg`
-  }, {
-    name: 'sukwon',
-    img: `${_environment.default.rootURL}assets/images/sukwon.jpg`
-  }, {
-    name: 'wardell',
-    img: `${_environment.default.rootURL}assets/images/wardell.png`
-  }]; // Archive
-  // {
-  //   name: 'aaron',
-  //   img: `${config.rootURL}assets/images/aaron.jpg`
-  // },
-  // {
-  //   name: 'austin',
-  //   img: `${config.rootURL}assets/images/austin.png`
-  // },
-  // {
-  //   name: 'ben',
-  //   img: `${config.rootURL}assets/images/ben.jpg`
-  // },
-  // {
-  //   name: 'craig',
-  //   img: `${config.rootURL}assets/images/craig.png`
-  // },
-  // {
-  //   name: 'elan',
-  //   img: `${config.rootURL}assets/images/elan.png`
-  // },
-  // {
-  //   name: 'ini',
-  //   img: `${config.rootURL}assets/images/ini.jpg`
-  // },
-  // {
-  //   name: 'jesse',
-  //   img: `${config.rootURL}assets/images/jesse.png`
-  // },
-  // {
-  //   name: 'kushan',
-  //   img: `${config.rootURL}assets/images/kushan.png`
-  // },
-  // {
-  //   name: 'kyle',
-  //   img: `${config.rootURL}assets/images/kyle.png`
-  // },
-  // {
-  //   name: 'lesley',
-  //   img: `${config.rootURL}assets/images/lesley.png`
-  // },
-  // {
-  //   name: 'matt d',
-  //   img: `${config.rootURL}assets/images/mattd.png`
-  // },
-  // {
-  //   name: 'nik',
-  //   img: `${config.rootURL}assets/images/nik.png`
-  // },
-  // {
-  //   name: 'sam',
-  //   img: `${config.rootURL}assets/images/sam.png`
-  // },
+  let loadedPeople = null;
+  const getPeople = async () => {
+    if (loadedPeople) {
+      return loadedPeople;
+    }
+    const response = await fetch(`${_environment.default.rootURL}assets/guesses.json`);
+    loadedPeople = (await response.json()).map(person => {
+      return {
+        ...person,
+        img: `${_environment.default.rootURL}${person.photoFilePath}`
+      };
+    });
+    loadedPeople.sort((left, right) => {
+      if (left.firstName < right.firstName) {
+        return -1;
+      } else if (left.firstName > right.firstName) {
+        return 1;
+      }
+      return 0;
+    });
+    return loadedPeople;
+  };
+  var _default = getPeople;
   _exports.default = _default;
 });
 ;
@@ -674,7 +524,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("invoices-guess-who/app")["default"].create({"name":"invoices-guess-who","version":"0.0.0+cae69861"});
+            require("invoices-guess-who/app")["default"].create({"name":"invoices-guess-who","version":"0.0.0+ed1d6e57"});
           }
 
 //# sourceMappingURL=invoices-guess-who.map

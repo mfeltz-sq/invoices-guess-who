@@ -33,6 +33,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember test`
 * `ember test --server`
 
+### Updating team members
+
+This includes a script to automatically update the people that can be chosen as guesses. You can run it via:
+
+```shell
+./scripts/updateTeamMembers.js
+```
+
 ### Linting
 
 * `npm run lint:hbs`

@@ -1,0 +1,22 @@
+name: 'Deploy to GitHub Pages'
+'on':
+  push:
+    branches:
+      - 'main'
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20
+    - run: 'npm install -g yarn'
+    - uses: actions/checkout@v3
+    - run: 'yarn install'
+    - run: 'yarn exec ember build -- --environment=production'
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: dist/

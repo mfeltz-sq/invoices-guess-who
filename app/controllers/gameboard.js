@@ -1,9 +1,12 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-// import config from 'invoices-guess-who/config/environment';
+import { inject as service } from '@ember/service';
 
-export default class GameboardController extends Controller {
+export default Controller.extend({
+  routerService: service('router'),
+
   @action openPersonWindow() {
-    window.open(`/your-card`, 'your card', 'height=350,width=350');
+    const url = this.get('routerService').urlFor('your-card')
+    window.open(url, 'your card', 'height=350,width=350');
   }
-}
+})

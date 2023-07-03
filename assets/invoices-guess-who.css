@@ -1,0 +1,102 @@
+body {
+  background-color: #CCE1FF;
+  font-family: monospace;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.header-instructions {
+  margin-right: 48px;
+  width: 600px;
+}
+
+.guessing-card__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.person-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.get-person-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-person-button {
+  background-color: #006AFF;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 0 4px rgb(0 0 0 / 10%);
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.playing-card,
+.guessing-card {
+  align-items: center;
+  background-color: #006AFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 0 4px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  height: 200px
+}
+
+.guessing-card {
+  margin: 0 auto;
+  height: 240px;
+}
+
+.guessing-card__button {
+  background-color: #CCE1FF;
+  border: none;
+  border-radius: 6px;
+  color: #006AFF;
+  line-height: 24px;
+  padding: 0 16px;
+}
+
+.person-card {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.playing-card--is-flipped {
+  background-color: gray;
+  justify-content: center;
+}
+
+.person-card__img {
+  border-radius: 10px;
+  width: 146px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.person-card__name {
+  margin: 8px;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}

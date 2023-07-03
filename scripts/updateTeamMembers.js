@@ -11,6 +11,7 @@ const path = require("path");
  * @property {string} username - The username for this employee.
  * @property {string} organization - The team this employee belongs to.
  * @property {string} primary_photo - The path to the primary photo of this employee. Does not include the host.
+ * @property {string} authoritative_photo - The path to the authoritive photo of this employee. Does not include the host.
  * @property {string} preferred_first_name - The preferred first name of the employee
  * @property {string} last_name - The last name of the employee
  */
@@ -25,7 +26,7 @@ const path = require("path");
  */
 
 
-const DEFAULT_ORGANIZATIONS = ["invoices", "billpay"]
+const DEFAULT_ORGANIZATIONS = ["invoices", "billpay", "pmm - invoices", "cpos ds - invoices"]
 const IGNORED_USERNAMES = ['cosgrove']
 const API_HOST = 'https://my.sqcorp.co'
 const ROOT_DIRECTORY = path.resolve(__dirname, '..')
@@ -169,7 +170,7 @@ const getPhotoFilePath = (employee) => {
  * @return {Promise<void>}
  */
 const downloadPhoto = async (employee) => {
-  const url = fixPhotoUrl(employee.primary_photo)
+  const url = fixPhotoUrl(employee.primary_photo ?? employee.authoritative_photo)
   console.log(`Downloading photo for ${employee.username} from ${url}`)
   try {
     const buffer = (await axios.get(url, {responseType: "arraybuffer"})).data
@@ -178,6 +179,23 @@ const downloadPhoto = async (employee) => {
     console.log(`Writing ${employee.username} to ${filePath}`)
   } catch (e) {
     bail(`Failed to download and save photo for employee @${employee.username} from ${url}: ${e.message}`)
+  }
+}
+
+/**
+ * Save the default photo image to disk for this employee.
+ * @param employee {Employee}
+ * @return {Promise<void>}
+ */
+const saveDefaultPhoto = async (employee) => {
+  console.log(`Saving default photo for ${employee.username} as they have no set photo`)
+  try {
+    const filePath = getPhotoFilePath(employee);
+    const buffer = await fs.readFile(path.resolve(__dirname, 'default_image.jpg'));
+    await fs.writeFile(filePath, buffer)
+    console.log(`Writing ${employee.username} to ${filePath}`)
+  } catch (e) {
+    bail(`Failed to save default photo for employee @${employee.username}: ${e.message}`)
   }
 }
 
@@ -224,13 +242,16 @@ const start = async () => {
   const organizations = DEFAULT_ORGANIZATIONS
   const usableEmployees = (await fetchEmployees())
     .filter((employee) => organizations.includes(employee.organization.toLowerCase()))
-    .filter((employee) => !!employee.primary_photo)
     .filter((employee) => !IGNORED_USERNAMES.includes(employee.username))
 
   await deleteExistingImages()
 
   for (const employee of usableEmployees) {
-    await downloadPhoto(employee)
+    if (employee.primary_photo ?? employee.authoritative_photo) {
+      await downloadPhoto(employee)
+    } else {
+      await saveDefaultPhoto(employee)
+    }
     await apiDelay()
   }
 

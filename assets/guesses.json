@@ -120,6 +120,11 @@
     "photoFilePath": "assets/images/rschreiber.jpg"
   },
   {
+    "firstName": "Anthony",
+    "lastName": "Palacio",
+    "photoFilePath": "assets/images/anthonyp.jpg"
+  },
+  {
     "firstName": "Mengqi",
     "lastName": "Zhu",
     "photoFilePath": "assets/images/mengqi.jpg"
@@ -128,6 +133,11 @@
     "firstName": "Jason",
     "lastName": "Yang",
     "photoFilePath": "assets/images/jasony.jpg"
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Blair",
+    "photoFilePath": "assets/images/ablair.jpg"
   },
   {
     "firstName": "Karl",
@@ -145,6 +155,11 @@
     "photoFilePath": "assets/images/csakaguchi.jpg"
   },
   {
+    "firstName": "Anne",
+    "lastName": "Linde",
+    "photoFilePath": "assets/images/alinde.jpg"
+  },
+  {
     "firstName": "Devany",
     "lastName": "Moe",
     "photoFilePath": "assets/images/devany.jpg"
@@ -160,9 +175,24 @@
     "photoFilePath": "assets/images/sarang.jpg"
   },
   {
+    "firstName": "Michelle",
+    "lastName": "Haunert",
+    "photoFilePath": "assets/images/mhaunert.jpg"
+  },
+  {
     "firstName": "Jiaqi",
     "lastName": "Wang",
     "photoFilePath": "assets/images/jiaqiw.jpg"
+  },
+  {
+    "firstName": "Adnan",
+    "lastName": "Ajmal",
+    "photoFilePath": "assets/images/adnanajmal.jpg"
+  },
+  {
+    "firstName": "Elias",
+    "lastName": "Carranza",
+    "photoFilePath": "assets/images/ecarranza.jpg"
   },
   {
     "firstName": "Kyle",
@@ -190,6 +220,16 @@
     "photoFilePath": "assets/images/jordanjones.jpg"
   },
   {
+    "firstName": "Rodrigo",
+    "lastName": "Ibarra",
+    "photoFilePath": "assets/images/rodrigoi.jpg"
+  },
+  {
+    "firstName": "Baylee",
+    "lastName": "Bell",
+    "photoFilePath": "assets/images/bbell.jpg"
+  },
+  {
     "firstName": "Nestor",
     "lastName": "Bautista",
     "photoFilePath": "assets/images/nbautista.jpg"
@@ -203,6 +243,11 @@
     "firstName": "Krithika",
     "lastName": "Ramanathan",
     "photoFilePath": "assets/images/kramanathan.jpg"
+  },
+  {
+    "firstName": "Prem Parag",
+    "lastName": "Shah",
+    "photoFilePath": "assets/images/prems.jpg"
   },
   {
     "firstName": "Nik",
@@ -228,6 +273,11 @@
     "firstName": "Ben",
     "lastName": "Lu",
     "photoFilePath": "assets/images/benlu.jpg"
+  },
+  {
+    "firstName": "Brendan",
+    "lastName": "Reed",
+    "photoFilePath": "assets/images/brendanr.jpg"
   },
   {
     "firstName": "Jennifer",

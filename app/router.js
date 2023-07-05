@@ -11,4 +11,8 @@ Router.map(function() {
   this.route('your-card');
 });
 
+Router.reopen({
+  location: 'hash'
+});
+
 export default Router;

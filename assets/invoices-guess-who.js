@@ -45,7 +45,7 @@ e.default=r}),define("invoices-guess-who/resolver",["exports","ember-resolver"],
 var r=t.default
 e.default=r}),define("invoices-guess-who/router",["exports","invoices-guess-who/config/environment"],function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var r=Ember.Router.extend({location:t.default.locationType,rootURL:t.default.rootURL})
-r.map(function(){this.route("gameboard",{path:"/"}),this.route("your-card")})
+r.map(function(){this.route("gameboard",{path:"/"}),this.route("your-card")}),r.reopen({location:"hash"})
 var n=r
 e.default=n}),define("invoices-guess-who/routes/gameboard",["exports"],function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var t=Ember.Route.extend({})
@@ -70,11 +70,11 @@ var e={},t=Object.prototype,n=t.hasOwnProperty,o=Object.defineProperty||function
 function l(e,t,r){return Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}),e[t]}try{l({},"")}catch(N){l=function(e,t,r){return e[t]=r}}function c(e,t,r,n){var i=t&&t.prototype instanceof p?t:p,a=Object.create(i.prototype),s=new E(n||[])
 return o(a,"_invoke",{value:_(e,r,s)}),a}function f(e,t,r){try{return{type:"normal",arg:e.call(t,r)}}catch(N){return{type:"throw",arg:N}}}e.wrap=c
 var d={}
-function p(){}function v(){}function m(){}var h={}
-l(h,a,function(){return this})
+function p(){}function v(){}function h(){}var m={}
+l(m,a,function(){return this})
 var g=Object.getPrototypeOf,y=g&&g(g(M([])))
-y&&y!==t&&n.call(y,a)&&(h=y)
-var b=m.prototype=p.prototype=Object.create(h)
+y&&y!==t&&n.call(y,a)&&(m=y)
+var b=h.prototype=p.prototype=Object.create(m)
 function w(e){["next","throw","return"].forEach(function(t){l(e,t,function(e){return this._invoke(t,e)})})}function x(e,t){var r
 o(this,"_invoke",{value:function(o,i){function a(){return new t(function(r,a){(function r(o,i,a,s){var u=f(e[o],e,i)
 if("throw"!==u.type){var l=u.arg,c=l.value
@@ -102,8 +102,8 @@ if(t)return t.call(e)
 if("function"==typeof e.next)return e
 if(!isNaN(e.length)){var r=-1,o=function t(){for(;++r<e.length;)if(n.call(e,r))return t.value=e[r],t.done=!1,t
 return t.value=void 0,t.done=!0,t}
-return o.next=o}}return{next:L}}function L(){return{value:void 0,done:!0}}return v.prototype=m,o(b,"constructor",{value:m,configurable:!0}),o(m,"constructor",{value:v,configurable:!0}),v.displayName=l(m,u,"GeneratorFunction"),e.isGeneratorFunction=function(e){var t="function"==typeof e&&e.constructor
-return!!t&&(t===v||"GeneratorFunction"===(t.displayName||t.name))},e.mark=function(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,m):(e.__proto__=m,l(e,u,"GeneratorFunction")),e.prototype=Object.create(b),e},e.awrap=function(e){return{__await:e}},w(x.prototype),l(x.prototype,s,function(){return this}),e.AsyncIterator=x,e.async=function(t,r,n,o,i){void 0===i&&(i=Promise)
+return o.next=o}}return{next:L}}function L(){return{value:void 0,done:!0}}return v.prototype=h,o(b,"constructor",{value:h,configurable:!0}),o(h,"constructor",{value:v,configurable:!0}),v.displayName=l(h,u,"GeneratorFunction"),e.isGeneratorFunction=function(e){var t="function"==typeof e&&e.constructor
+return!!t&&(t===v||"GeneratorFunction"===(t.displayName||t.name))},e.mark=function(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,h):(e.__proto__=h,l(e,u,"GeneratorFunction")),e.prototype=Object.create(b),e},e.awrap=function(e){return{__await:e}},w(x.prototype),l(x.prototype,s,function(){return this}),e.AsyncIterator=x,e.async=function(t,r,n,o,i){void 0===i&&(i=Promise)
 var a=new x(c(t,r,n,o),i)
 return e.isGeneratorFunction(r)?a:a.next().then(function(e){return e.done?e.value:a.next()})},w(b),l(b,u,"Generator"),l(b,a,function(){return this}),l(b,"toString",function(){return"[object Generator]"}),e.keys=function(e){var t=Object(e),r=[]
 for(var n in t)r.push(n)
@@ -147,4 +147,4 @@ return new Promise(function(n,o){var i=e.apply(t,r)
 function s(e){a(i,n,o,s,u,"next",e)}function u(e){a(i,n,o,s,u,"throw",e)}s(void 0)})})
 return function(){return n.apply(this,arguments)}}()
 e.default=u}),define("invoices-guess-who/config/environment",[],function(){try{var e="invoices-guess-who/config/environment",t=document.querySelector('meta[name="'+e+'"]').getAttribute("content"),r={default:JSON.parse(decodeURIComponent(t))}
-return Object.defineProperty(r,"__esModule",{value:!0}),r}catch(n){throw new Error('Could not read config from meta tag with name "'+e+'".')}}),runningTests||require("invoices-guess-who/app").default.create({name:"invoices-guess-who",version:"0.0.0+79f20b46"})
+return Object.defineProperty(r,"__esModule",{value:!0}),r}catch(n){throw new Error('Could not read config from meta tag with name "'+e+'".')}}),runningTests||require("invoices-guess-who/app").default.create({name:"invoices-guess-who",version:"0.0.0+b9a13509"})

@@ -41,6 +41,11 @@ This includes a script to automatically update the people that can be chosen as 
 ./scripts/updateTeamMembers.js
 ```
 
+### Updating the GitHub Pages site
+
+New commits to `main` are automatically deployed to the GitHub Pages site
+at https://mfeltz-sq.github.io/invoices-guess-who
+
 ### Linting
 
 * `npm run lint:hbs`

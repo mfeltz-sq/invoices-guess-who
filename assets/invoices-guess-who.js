@@ -147,4 +147,4 @@ return new Promise(function(n,o){var i=e.apply(t,r)
 function s(e){a(i,n,o,s,u,"next",e)}function u(e){a(i,n,o,s,u,"throw",e)}s(void 0)})})
 return function(){return n.apply(this,arguments)}}()
 e.default=u}),define("invoices-guess-who/config/environment",[],function(){try{var e="invoices-guess-who/config/environment",t=document.querySelector('meta[name="'+e+'"]').getAttribute("content"),r={default:JSON.parse(decodeURIComponent(t))}
-return Object.defineProperty(r,"__esModule",{value:!0}),r}catch(n){throw new Error('Could not read config from meta tag with name "'+e+'".')}}),runningTests||require("invoices-guess-who/app").default.create({name:"invoices-guess-who",version:"0.0.0+cb534da9"})
+return Object.defineProperty(r,"__esModule",{value:!0}),r}catch(n){throw new Error('Could not read config from meta tag with name "'+e+'".')}}),runningTests||require("invoices-guess-who/app").default.create({name:"invoices-guess-who",version:"0.0.0+6a4d4f4a"})
